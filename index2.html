@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення</title>
+</head>
+<body>
+
+<h2>Замовлення товару</h2>
+
+<form action="index2.php" method="POST">
+    <input type="text" name="name" placeholder="Ім'я" required><br><br>
+
+    <input type="email" name="email" placeholder="Email" required><br><br>
+
+    <select name="product" required>
+        <option value="100">Товар A (100 грн)</option>
+        <option value="200">Товар B (200 грн)</option>
+        <option value="300">Товар C (300 грн)</option>
+    </select><br><br>
+
+    <input type="number" name="quantity" min="1" max="100" required><br><br>
+
+    <button type="submit">Замовити</button>
+</form>
+
+</body>
+</html>
